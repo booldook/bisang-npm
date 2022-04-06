@@ -53,9 +53,7 @@
 	</head>
 	<body>
 		<div class="wrapper">
-			<ul id="lists">
-				<li>ddddd</li>
-			</ul>
+			<ul id="lists"></ul>
 			<form class="input-wrap" id="form">
 				<input type="text" name="chat" class="input" id="input" />
 				<button id="sendBt">전송</button>
@@ -64,7 +62,7 @@
 		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 		<script src="/socket.io/socket.io.js"></script>
 		<script>
-			const socket = id();
+			const socket = io();
 			const $lists = $('#lists');
 			const $form = $('#form');
 			const $input = $('#input');
